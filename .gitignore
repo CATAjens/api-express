@@ -1,0 +1,7 @@
+#que no guarde los cambios de este archivo
+# Node.js
+node_modules/
+
+# Environment variables
+.env
+
