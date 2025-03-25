@@ -6,52 +6,54 @@ GET {{host}} HTTP/1.1
 //-----GET ALL-----
 
 ###
-GET {{host}}/cursos HTTP/1.1
+GET {{host}}/profesores HTTP/1.1
 Accept: application/json
 ###
 
 //---GET-ID---
 
-GET {{host}}/cursos/2 HTTP/1.1
+GET {{host}}/profesores/2 HTTP/1.1
 Accept: application/json
 
 //------------AGREGAR------------------
 
 ###
-POST {{host}}/cursos HTTP/1.1
+POST {{host}}/profesores HTTP/1.1
 Content-Type: application/json
 
 {
     "id": 3,
-    "nombre": "Historia del Perú",
-    "duracion": 20
+  "nombre": "Jens",
+  "especialidad": "Python"
 }
 ###
-POST {{host}}/cursos HTTP/1.1
+POST {{host}}/profesores HTTP/1.1
 Content-Type: application/json
 
 {
     "id": 4,
-    "nombre": "Algebra",
-    "duracion": 20
+    "nombre": "Julio",
+    "especialidad": "Java"
 }
 
 //---------MODIFICAR--------
 
 ###
-PUT {{host}}/cursos/1 HTTP/1.1
+PUT {{host}}/profesores/4 HTTP/1.1
 Content-Type: application/json
 
 {
-    "nombre": "Geometria",
-    "duracion": 15
+    "nombre": "Yasmin",
+    "especialidad": "C#"
 }
 
 //-------ELIMINAR-----
 
 ###
-DELETE {{host}}/cursos/3 HTTP/1.1
+DELETE {{host}}/profesores/3 HTTP/1.1
 Content-Type: application/json
 ###
-DELETE {{host}}/cursos/1 HTTP/1.1
+DELETE {{host}}/profesores/1 HTTP/1.1
 Content-Type: application/json
+
+
