@@ -6,7 +6,7 @@ GET {{host}} HTTP/1.1
 //-----GET ALL-----
 
 ###
-GET {{host}}/profesores HTTP/1.1
+GET {{host}}/teacher HTTP/1.1
 Accept: application/json
 ###
 

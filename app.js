@@ -15,15 +15,16 @@ const port = 3000;
 
 //Configuramos express para que pueda recibir datos en formato JSON
 app.use(express.json()); //MIDEWORLD-Una funcion que se ejecuta cerrar el paso
+                         //Parsear
 
 //configuramos el ruteador para los cursos
-app.use('/cursos', cursosRouter)
-app.use('/profesores', profesorRouter)
+app.use('/courses', cursosRouter)
+app.use('/teacher', profesorRouter)
 
 //Ponemos el servidor a escuchar en el puerto y host definido
 app.listen(port, host, () => {
     console.log(`Servidor ejecutandose en http://${host}:${port}`);
 });
 
-
+//http://127.0.0.1:3000/courses
 
