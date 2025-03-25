@@ -113,9 +113,3 @@ app.delete('/cursos/:id', (req, res) => {
 app.listen(port, host, () => {
     console.log(`Servidor ejecutandose en http://${host}:${port}`);
 });
-
-
-
-
-
-
